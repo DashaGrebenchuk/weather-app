@@ -72,21 +72,3 @@ let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", getCurrentPosition);
 
 searchCity("Warsaw");
-
-//Farenheit to Celcius
-function showFarenheitTemp(event) {
-  event.preventDefault();
-  let farenheitTemp = document.querySelector("#current-temp");
-  farenheitTemp.innerHTML = `66°`;
-}
-function showCelciusTemp(event) {
-  event.preventDefault();
-  let celciusTemp = document.querySelector("#current-temp");
-  celciusTemp.innerHTML = `25°`;
-}
-
-let farenheitTemp = document.querySelector("#farenheit-link");
-farenheitTemp.addEventListener("click", showFarenheitTemp);
-
-let celciusTemp = document.querySelector("#celcius-link");
-celciusTemp.addEventListener("click", showCelciusTemp);
