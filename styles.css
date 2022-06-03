@@ -101,6 +101,13 @@ h3.icon-text {
   font-weight: lighter;
   padding-top: 55px;
 }
+#link-github {
+  text-decoration: none;
+  color: black;
+}
+#link-github:hover {
+  color: white;
+}
 .footer-icons {
   text-align: center;
   font-size: 20px;
