@@ -1,7 +1,7 @@
 //real day and time
-let currentDate = new Date();
 
-function formatDate(currentDate) {
+function formatDate(timestamp) {
+  let currentDate = new Date();
   let days = [
     "Sunday",
     "Monday",
@@ -24,8 +24,6 @@ function formatDate(currentDate) {
 
   return formedDate;
 }
-let dateLine = document.querySelector("#current-date");
-dateLine.innerHTML = formatDate(currentDate);
 
 //change the city when clicking Search + currentWeather
 function showCurrentWeather(response) {
@@ -41,6 +39,9 @@ function showCurrentWeather(response) {
   );
   document.querySelector("#humidity").innerHTML = Math.round(
     response.data.main.humidity
+  );
+  document.querySelector("#current-date").innerHTML = formatDate(
+    response.data.dt * 1000
   );
 }
 function searchCity(city) {
