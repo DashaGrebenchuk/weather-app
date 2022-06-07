@@ -28,6 +28,7 @@ h1.main-city {
   font-weight: 100;
   color: white;
   margin-bottom: 0;
+  text-transform: capitalize;
 }
 p.current-date {
   font-weight: lighter;
