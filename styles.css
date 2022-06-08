@@ -41,11 +41,20 @@ h2.current-temp {
   font-weight: 300;
   color: white;
 }
-#celcius-link:hover,
+#line {
+  font-size: 30px;
+}
+#celcius-link:hover {
+  color: #dca2d9;
+}
 #farenheit-link:hover {
   color: white;
 }
-#celcius-link,
+#celcius-link {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
 #farenheit-link {
   text-decoration: none;
   color: #dca2d9;
@@ -72,7 +81,7 @@ h3.icon-text {
   font-size: 20px;
   margin-bottom: 55px;
   position: relative;
-  left: 32px;
+  left: 10px;
   text-transform: capitalize;
 }
 .main-card {
