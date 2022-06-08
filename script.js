@@ -32,6 +32,12 @@ function showCurrentWeather(response) {
   document.querySelector("#current-temp").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#day-temp").innerHTML = Math.round(
+    response.data.main.temp_max
+  );
+  document.querySelector("#night-temp").innerHTML = Math.round(
+    response.data.main.temp_min
+  );
   document.querySelector("#icon-text").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#wind").innerHTML = Math.round(
