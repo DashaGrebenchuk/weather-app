@@ -73,6 +73,7 @@ h3.icon-text {
   margin-bottom: 55px;
   position: relative;
   left: 32px;
+  text-transform: capitalize;
 }
 .main-card {
   background-color: rgba(0, 0, 0, 0.5);
