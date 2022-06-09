@@ -116,14 +116,18 @@ h3.icon-text {
   text-align: center;
   font-size: 14px;
   font-weight: lighter;
-  padding-top: 55px;
+  padding-top: 26px;
 }
-#link-github {
+#link-github,
+#link-netlify {
   text-decoration: none;
-  color: black;
+  color: #795894;
 }
 #link-github:hover {
-  color: white;
+  color: black;
+}
+#link-netlify:hover {
+  color: black;
 }
 .footer-icons {
   text-align: center;
