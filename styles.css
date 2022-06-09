@@ -24,7 +24,7 @@ div.card-box {
   background-color: rgba(166, 150, 200, 0.5);
 }
 h1.main-city {
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 100;
   color: white;
   margin-bottom: 0;
@@ -41,28 +41,33 @@ h2.current-temp {
   font-weight: 300;
   color: white;
 }
-#line {
-  font-size: 30px;
+#celcius-link,
+#line,
+#fahrenheit-link {
+  position: relative;
+  bottom: 22px;
+  font-size: 32px;
 }
+
 #celcius-link:hover {
   color: #dca2d9;
 }
-#farenheit-link:hover {
+#fahrenheit-link:hover {
   color: white;
 }
 #celcius-link {
   text-decoration: none;
   color: white;
-  font-size: 40px;
 }
-#farenheit-link {
+#fahrenheit-link {
   text-decoration: none;
   color: #dca2d9;
-  font-size: 40px;
 }
 #line {
   color: white;
-  font-size: 40px;
+  font-size: 28px;
+  position: relative;
+  bottom: 24px;
 }
 h4.day-temp {
   font-weight: lighter;
