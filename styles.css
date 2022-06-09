@@ -34,7 +34,7 @@ p.current-date {
   font-weight: lighter;
   font-size: 20px;
   color: white;
-  margin-bottom: 32px;
+  margin-bottom: 0;
 }
 h2.current-temp {
   font-size: 70px;
@@ -68,20 +68,17 @@ h4.day-temp {
   font-weight: lighter;
   color: white;
 }
-
-i.main-icon {
-  font-size: 80px;
+#icon {
+  width: 100px;
+  margin-bottom: 60px;
   position: relative;
-  bottom: 4px;
-  color: white;
+  left: 8px;
 }
 h3.icon-text {
   color: white;
   font-weight: lighter;
   font-size: 20px;
-  margin-bottom: 55px;
-  position: relative;
-  left: 10px;
+  margin-bottom: 25px;
   text-transform: capitalize;
 }
 .main-card {

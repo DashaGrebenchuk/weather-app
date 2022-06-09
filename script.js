@@ -49,6 +49,12 @@ function showCurrentWeather(response) {
   document.querySelector("#current-date").innerHTML = formatDate(
     response.data.dt * 1000
   );
+  document
+    .querySelector("#icon")
+    .setAttribute("src", `icons_new/${response.data.weather[0].icon}.png`);
+  document
+    .querySelector("#icon")
+    .setAttribute("alt", response.data.weather[0].main);
 }
 function searchCity(city) {
   let apiKey = "4fb36667f50c716efb0c9e559b5b7ffe";
