@@ -83,6 +83,8 @@ function getCurrentPosition(event) {
 
 function displayFahrenheit(event) {
   event.preventDefault();
+  celciusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   document.querySelector("#current-temp").innerHTML = Math.round(
     fahrenheitTemperature
@@ -91,6 +93,8 @@ function displayFahrenheit(event) {
 
 function dispayCelcius(event) {
   event.preventDefault();
+  celciusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   document.querySelector("#current-temp").innerHTML =
     Math.round(celciusTemperature);
 }

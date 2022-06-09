@@ -41,28 +41,28 @@ h2.current-temp {
   font-weight: 300;
   color: white;
 }
-#celcius-link,
+
+.celcius-link,
 #line,
-#fahrenheit-link {
+.fahrenheit-link {
   position: relative;
   bottom: 22px;
   font-size: 32px;
+  text-decoration: none;
+  color: #dca2d9;
+}
+.celcius-link:hover {
+  color: white;
+}
+.fahrenheit-link:hover {
+  color: white;
+}
+.current-temp .active {
+  color: white;
+  cursor: default;
+  text-decoration: none;
 }
 
-#celcius-link:hover {
-  color: #dca2d9;
-}
-#fahrenheit-link:hover {
-  color: white;
-}
-#celcius-link {
-  text-decoration: none;
-  color: white;
-}
-#fahrenheit-link {
-  text-decoration: none;
-  color: #dca2d9;
-}
 #line {
   color: white;
   font-size: 28px;
