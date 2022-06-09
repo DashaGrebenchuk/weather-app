@@ -27,7 +27,6 @@ function formatDate(timestamp) {
 
 //change the city when clicking Search + currentWeather
 function showCurrentWeather(response) {
-  console.log(response);
   celciusTemperature = response.data.main.temp;
   document.querySelector("#main-city").innerHTML = response.data.name;
   document.querySelector("#current-temp").innerHTML =
@@ -60,7 +59,6 @@ function showCurrentWeather(response) {
 function searchCity(city) {
   let apiKey = "4fb36667f50c716efb0c9e559b5b7ffe";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(showCurrentWeather);
 }
 
