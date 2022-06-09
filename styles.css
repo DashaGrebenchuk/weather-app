@@ -94,7 +94,10 @@ h3.icon-text {
   color: white;
   text-align: center;
 }
-.forecast-icons,
+.secondary-icons {
+  width: 60px;
+  margin: 15px 5px;
+}
 .forecast-temp {
   color: white;
   text-align: center;
