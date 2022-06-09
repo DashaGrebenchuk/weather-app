@@ -95,8 +95,9 @@ h3.icon-text {
   text-align: center;
 }
 .secondary-icons {
-  width: 60px;
-  margin: 15px 5px;
+  width: 40px;
+  display: block;
+  margin: 15px auto 5px;
 }
 .forecast-temp {
   color: white;
