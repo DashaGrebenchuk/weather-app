@@ -24,7 +24,27 @@ function formatDate(timestamp) {
 
   return formedDate;
 }
-
+//forecast
+function dispalyForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
+  day.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+              ${day}
+              <img
+                src="icons_new/01d.png"
+                alt="clear-sky"
+                class="secondary-icons"
+              />
+              <div class="forecast-temp">24°</div>
+            </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 //change the city when clicking Search + currentWeather
 function showCurrentWeather(response) {
   celciusTemperature = response.data.main.temp;
@@ -112,3 +132,4 @@ let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", getCurrentPosition);
 
 searchCity("Warsaw");
+dispalyForecast();
