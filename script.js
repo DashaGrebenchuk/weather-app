@@ -140,4 +140,3 @@ let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", getCurrentPosition);
 
 searchCity("Warsaw");
-dispalyForecast();
