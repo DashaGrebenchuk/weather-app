@@ -26,8 +26,6 @@ function formatDate(timestamp) {
 }
 //forecast
 function dispalyForecast(response) {
-  console.log(response.data.daily);
-  let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
   day.forEach(function (day) {
@@ -44,7 +42,7 @@ function dispalyForecast(response) {
             </div>`;
   });
   forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
+  document.querySelector("#forecast").innerHTML = forecastHTML;
 }
 function getForecast(coordinates) {
   let apiKey = "4fb36667f50c716efb0c9e559b5b7ffe";
