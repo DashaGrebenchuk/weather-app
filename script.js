@@ -41,7 +41,6 @@ function formatDay(timestamp) {
 }
 
 function dispalyForecast(response) {
-  console.log(response.data.daily);
   let forecast = response.data.daily;
   document.querySelector("#day-temp").innerHTML = Math.round(
     forecast[0].temp.day
