@@ -43,6 +43,12 @@ function formatDay(timestamp) {
 function dispalyForecast(response) {
   console.log(response.data.daily);
   let forecast = response.data.daily;
+  document.querySelector("#day-temp").innerHTML = Math.round(
+    forecast[0].temp.day
+  );
+  document.querySelector("#night-temp").innerHTML = Math.round(
+    forecast[0].temp.night
+  );
   forecast.shift();
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
@@ -76,12 +82,6 @@ function showCurrentWeather(response) {
   document.querySelector("#main-city").innerHTML = response.data.name;
   document.querySelector("#current-temp").innerHTML =
     Math.round(celciusTemperature);
-  document.querySelector("#day-temp").innerHTML = Math.round(
-    response.data.main.temp_max
-  );
-  document.querySelector("#night-temp").innerHTML = Math.round(
-    response.data.main.temp_min
-  );
   document.querySelector("#icon-text").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#wind").innerHTML = Math.round(
