@@ -112,6 +112,8 @@ function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#search-input").value;
   searchCity(city);
+  celciusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
 }
 
 function searchPosition(position) {
@@ -123,6 +125,8 @@ function searchPosition(position) {
 function getCurrentPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchPosition);
+  celciusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
 }
 
 function displayFahrenheit(event) {
