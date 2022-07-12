@@ -154,3 +154,28 @@ h3.icon-text {
   position: relative;
   left: 20px;
 }
+@media (max-width: 900px) {
+  h1 {
+    text-align: center;
+  }
+  div.card-box {
+    padding: 10px 15px 15px 10px;
+  }
+  h2.current-temp {
+    font-size: 60px;
+    padding-left: 17px;
+    padding-top: 116px;
+  }
+  .fahrenheit-link,
+  #line {
+    display: none;
+  }
+  h4.day-temp,
+  .forecast-info {
+    padding-left: 17px;
+  }
+  #icon {
+    position: relative;
+    left: 40px;
+  }
+}
